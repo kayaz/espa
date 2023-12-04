@@ -16,4 +16,6 @@ return array (
     'nasiklienci-header' => 'Nasi klienci',
     'referencje-header' => 'Referencje',
     'realizacja-stopka' => 'Realizacja',
+    'menu-homepage' => 'Strona główna'
+
 );

@@ -333,7 +333,7 @@ button:focus,
 }
 
 #mainPartnership {
-    padding: 120px 0 70px;
+    padding: 120px 0;
     background: #f9f9f9;
     box-shadow: inset 0 11px 8px -10px #ccc;
     p {
@@ -485,8 +485,14 @@ button:focus,
         padding: 7px;
     }
 }
-.page-contact #contactBoxes {
-    padding: 40px 0 100px
+
+.page-contact {
+    #contactBoxes {
+        padding: 40px 0 100px
+    }
+    #footer {
+        padding-top: 90px;
+    }
 }
 
 /* Pageheader
@@ -537,6 +543,30 @@ button:focus,
 ================================================== */
 #page {
     padding: 60px 0;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/* Features
+================================================== */
+.feature {
+    text-align: center;
+    &-icon {
+        border: 1px solid #e6e6e6;
+        padding: 20px;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 30px;
+        -webkit-box-shadow: 0 8px 24px -19px rgba(126, 126, 126, 1);
+        -moz-box-shadow: 0 8px 24px -19px rgba(126, 126, 126, 1);
+        box-shadow: 0 8px 24px -19px rgba(126, 126, 126, 1);
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 33px;
+        font-family: 'Merriweather',serif;
+    }
 }
 
 /* Offer

@@ -122,7 +122,7 @@
     </div>
 </div>
 
-<div id="reference">
+<div id="reference" class="d-none">
     <div class="container">
         <div class="row">
             <div class="col-12">

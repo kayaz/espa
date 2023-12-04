@@ -37,7 +37,7 @@ class OfferFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string|min:5|max:250',
+            'title' => 'required|string|min:2|max:250',
             'content' => 'required|string',
             'content_entry' => 'required|string|min:5|max:250',
             'meta_title' => '',
