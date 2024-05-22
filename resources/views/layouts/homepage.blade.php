@@ -32,7 +32,7 @@
     </div>
     <div class="cover"></div>
     <video autoplay muted controls disablePictureInPicture controlsList="nodownload" poster="{{ asset('/images/poster.jpg') }}" id="videobg">
-        <source src="http://www.espa.com.pl/assets/movie.mp4" type="video/mp4">
+        <source src="{{ asset('uploads/movie.mp4') }}" type="video/mp4">
     </video>
 </div>
 
