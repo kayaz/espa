@@ -24,8 +24,15 @@ class Greylist extends Model
         'route'
     ];
 
+    /**
+     * Get the options for activity logging.
+     *
+     * @return \Spatie\Activitylog\LogOptions
+     */
     public function getActivitylogOptions(): LogOptions
     {
-        // TODO: Implement getActivitylogOptions() method.
+        return LogOptions::defaults()
+            ->logAll()
+            ->logOnlyDirty();
     }
 }
