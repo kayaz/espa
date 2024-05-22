@@ -12,7 +12,7 @@
                             <div class="card-head container">
                                 <div class="row">
                                     <div class="col-12 pl-0">
-                                        <h4 class="page-title row"><i class="fe-home"></i><a href="{{route('admin.user.index')}}">Lista użytkowników</a><span class="d-inline-flex ml-2 mr-2">/</span>{{ $cardTitle }}</h4>
+                                        <h4 class="page-title"><i class="fe-home"></i><a href="{{route('admin.user.index')}}">Lista użytkowników</a><span class="d-inline-flex ms-2 me-2">/</span>{{ $cardTitle }}</h4>
                                     </div>
                                 </div>
                             </div>
