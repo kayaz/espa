@@ -24,13 +24,12 @@
     <div class="sidemenu-holder">
         <div id="sidemenu">
             <ul class="list-unstyled mb0">
-                <!--
                 <li class="">
                     <a href="{{route('admin.dashboard.seo.index')}}">
                         <i class="fe-sliders"></i>
                         <span> Ustawienia </span>
                     </a>
-                </li>-->
+                </li>
                 <li class="{{ Request::routeIs('admin.user.*') ? 'active' : '' }}">
                     <a href="{{route('admin.user.index')}}">
                         <i class="fe-users"></i>
