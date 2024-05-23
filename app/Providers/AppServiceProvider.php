@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Models\Investment;
+use App\Models\Offer;
+use App\Observers\OfferObserver;
 use Request;
 use Illuminate\Support\ServiceProvider;
 use Spatie\Activitylog\Models\Activity;
@@ -89,5 +91,6 @@ class AppServiceProvider extends ServiceProvider
         Page::observe(PageObserver::class);
         Url::observe(UrlObserver::class);
         Image::observe(ImageObserver::class);
+        Offer::observe(OfferObserver::class);
     }
 }

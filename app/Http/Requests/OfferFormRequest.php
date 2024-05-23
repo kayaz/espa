@@ -8,18 +8,6 @@ use Illuminate\Support\Str;
 class OfferFormRequest extends FormRequest
 {
     /**
-     * Prepare the data for validation.
-     *
-     * @return void
-     */
-    protected function prepareForValidation()
-    {
-        $this->merge([
-            'slug' => Str::slug($this->title)
-        ]);
-    }
-
-    /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
@@ -42,8 +30,7 @@ class OfferFormRequest extends FormRequest
             'content_entry' => 'required|string|min:5|max:250',
             'meta_title' => '',
             'meta_description' => '',
-            'meta_robots' => '',
-            'slug' => 'required'
+            'meta_robots' => ''
         ];
     }
 

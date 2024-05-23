@@ -19,14 +19,17 @@ class PageObserver
      */
     public function saving(Page $page)
     {
-        $page->slug = Str::slug($page->title);
+        if(app()->getLocale() == 'pl') {
 
-        if ($page->parent_id) {
-            $array = Page::ancestorsOf($page->id)->pluck('slug')->toArray();
-            array_push($array, $page->slug);
-            $page->uri = implode('/', $array);
-        } else {
-            $page->uri = $page->slug;
+            $page->slug = Str::slug($page->title);
+
+            if ($page->parent_id) {
+                $array = Page::ancestorsOf($page->id)->pluck('slug')->toArray();
+                array_push($array, $page->slug);
+                $page->uri = implode('/', $array);
+            } else {
+                $page->uri = $page->slug;
+            }
         }
     }
 

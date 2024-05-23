@@ -9,7 +9,7 @@ class Offer extends Model
 {
 
     use HasTranslations;
-    public $translatable = ['title', 'content', ' content_entry', 'meta_title', 'meta_description'];
+    public $translatable = ['title', 'content', 'content_entry', 'meta_title', 'meta_description'];
 
     /**
      * The attributes that are mass assignable.

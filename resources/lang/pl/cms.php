@@ -17,5 +17,4 @@ return array (
     'referencje-header' => 'Referencje',
     'realizacja-stopka' => 'Realizacja',
     'menu-homepage' => 'Strona główna'
-
 );

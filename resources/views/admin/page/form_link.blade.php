@@ -14,7 +14,7 @@
                     <div class="card-head container">
                         <div class="row">
                             <div class="col-12 pl-0">
-                                <h4 class="page-title row"><i class="fe-file-text"></i><a href="{{route('admin.page.index')}}" class="p-0">Menu</a><span class="d-inline-flex ml-2 mr-2">/</span>{{ $cardTitle }}</h4>
+                                <h4 class="page-title"><i class="fe-file-text"></i><a href="{{route('admin.page.index')}}" class="p-0">Menu</a><span class="d-inline-flex me-2 ms-2">/</span>{{ $cardTitle }}</h4>
                             </div>
                         </div>
                     </div>

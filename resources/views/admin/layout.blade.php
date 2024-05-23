@@ -84,6 +84,12 @@
                         <span> Referencje </span>
                     </a>
                 </li>
+                <li class="{{ Request::routeIs('admin.offer.*') ? 'active' : '' }}">
+                    <a href="{{route('admin.offer.index')}}">
+                        <i class="fe-book"></i>
+                        <span> Oferta </span>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="clearfix"></div>
