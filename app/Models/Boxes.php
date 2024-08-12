@@ -37,6 +37,9 @@ class Boxes extends Model
 
     public function getActivitylogOptions(): LogOptions
     {
-        // TODO: Implement getActivitylogOptions() method.
+        return LogOptions::defaults()
+            ->logOnly(['title', 'text', 'file_alt', 'link', 'link_button']) // Specify attributes you want to log
+            ->useLogName(static::$logName)
+            ->setDescriptionForEvent(fn(string $eventName) => "Box has been {$eventName}");
     }
 }

@@ -24,7 +24,11 @@
                             <div class="col-12">
                                 @include('form-elements.html-input-text-count', ['label' => 'Nazwa', 'name' => 'title', 'value' => $entry->title, 'maxlength' => 255, 'required' => 1])
                                 @include('form-elements.html-input-text-count', ['label' => 'Tekst', 'name' => 'text', 'value' => $entry->text, 'maxlength' => 255, 'required' => 1])
-                                @include('form-elements.html-input-file', ['label' => 'Zdjęcie', 'sublabel' => '(wymiary: '.config('images.box.width').'px / '.config('images.box.height').'px)', 'name' => 'file', 'file' => $entry->file, 'file_preview' => config('images.box.preview_file_path')])
+
+                                @if(!Request::get('lang'))
+                                    @include('form-elements.html-input-file', ['label' => 'Zdjęcie', 'sublabel' => '(wymiary: '.config('images.box.width').'px / '.config('images.box.height').'px)', 'name' => 'file', 'file' => $entry->file, 'file_preview' => config('images.box.preview_file_path')])
+                                @endif
+
                                 @include('form-elements.html-input-text-count', ['label' => 'Atrybut ALT zdjęcia', 'name' => 'file_alt', 'value' => $entry->file_alt, 'maxlength' => 100])
                                 @include('form-elements.html-input-text', ['label' => 'CTA link', 'name' => 'link', 'value' => $entry->link, 'required' => 1])
                                 @include('form-elements.html-input-text', ['label' => 'CTA button', 'name' => 'link_button', 'value' => $entry->link_button, 'required' => 1])
@@ -33,6 +37,7 @@
                     </div>
                 </div>
             </div>
+            <input type="hidden" name="lang" value="{{$current_locale}}">
             @include('form-elements.submit', ['name' => 'submit', 'value' => 'Zapisz'])
         </form>
 @endsection
