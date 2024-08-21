@@ -122,6 +122,28 @@
     </div>
 </div>
 
+<div id="mainAwards">
+    <div class="container">
+        <div class="row flex-row-reverse inline inline-tc">
+            <div class="col-6 d-flex align-items-center">
+                <div class="section-text ps-5">
+                    <span class="section-subtitle" data-modaleditor="3">{{ getInline($array, 3, 'modaleditor') }}</span>
+                    <h2 class="section-title" data-modaltytul="3">{{ getInline($array, 3, 'modaltytul') }}</h2>
+                    <div data-modaleditortext="3">{!! getInline($array, 3, 'modaleditortext') !!}</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="section-img section-img-shadow">
+                    <img src="{{ getInline($array, 3, 'file') }}" alt="{{ getInline($array, 3, 'file_alt') }}" data-img="3">
+                </div>
+            </div>
+            @auth
+                <div class="inline-btn"><button type="button" class="btn btn-primary btn-modal btn-sm" data-bs-toggle="modal" data-bs-target="#inlineModal" data-inline="3" data-hideinput="modallink,modallinkbutton" data-method="update" data-imgwidth="800" data-imgheight="600"></button></div>
+            @endauth
+        </div>
+    </div>
+</div>
+
 <div id="reference" class="d-none">
     <div class="container">
         <div class="row">
