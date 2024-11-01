@@ -18,7 +18,7 @@
                                 <li><a href="{{ route('mission.index') }}">@lang('cms.naszawizja-menu')</a></li>
                                 <li><a href="{{ route('contact.index') }}">@lang('cms.kontakt-menu')</a></li>
                             </ul>
-                            <ul id="lang" class="mb-0 list-unstyled d-none">
+                            <ul id="lang" class="mb-0 list-unstyled">
                                 @foreach($available_locales as $available_locale => $locale_name)
                                     <li @if($available_locale === $current_locale) class="active" @endif>
                                         <a href="{{ changeLocaleUrl(Route::current(), $available_locale) }}">{{ $available_locale }}</a>
