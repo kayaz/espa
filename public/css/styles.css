@@ -1650,6 +1650,16 @@ html.swipebox-html.swipebox-touch {
   #mainAwards {
     padding: 30px 15px;
   }
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #mainCategory .category-box {
+    padding: 35px 20px;
+  }
+  #mainCategory .category-box .section-title {
+    font-size: 28px;
+  }
 }
 /* end of 575.98 */
 /* end of 359.98 */

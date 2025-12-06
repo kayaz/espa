@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/styles.min.css') }}?v=06122025b" rel="stylesheet">
+    <link href="{{ asset('/css/styles.min.css') }}?v=06122025c" rel="stylesheet">
 
     @stack('style')
 </head>
@@ -82,7 +82,7 @@
                 <h2 class="section-title text-center">@lang('cms.nasiklienci-header')</h2>
             </div>
         </div>
-        <div class="row justify-content-center mt-1 mt-sm-5">
+        <div class="row justify-content-center mt-3 mt-sm-5">
             <div class="col-12 col-lg-10">
                 <div class="row d-flex justify-content-center">
                     @foreach($clients as $client)
