@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/styles.min.css') }}?v=06122025" rel="stylesheet">
+    <link href="{{ asset('/css/styles.min.css') }}?v=06122025b" rel="stylesheet">
 
     @stack('style')
 </head>
@@ -39,7 +39,7 @@
 <div id="mainAbout">
     <div class="container">
         <div class="row inline inline-tc">
-            <div class="col-6 d-flex align-items-center">
+            <div class="col-12 col-lg-6 d-flex align-items-center">
                 <div class="section-text pe-5">
                     <span class="section-subtitle" data-modaleditor="1">{{ getInline($array, 1, 'modaleditor') }}</span>
                     <h2 class="section-title" data-modaltytul="1">{{ getInline($array, 1, 'modaltytul') }}</h2>
@@ -47,7 +47,7 @@
                     <a href="{{ route('about.index') }}" class="bttn mt-3">@lang('cms.wiecejonas-button')</a>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                 <div class="section-img section-img-shadow">
                     <img src="{{ getInline($array, 1, 'file') }}" alt="{{ getInline($array, 1, 'file_alt') }}" data-img="1">
                 </div>
@@ -63,7 +63,7 @@
     <div class="container-fluid p-0">
         <div class="row no-gutters">
             @foreach($boxes as $box)
-            <div class="col-{{$box_grid}}">
+            <div class="col-12 col-lg-6">
                 <div class="category-box text-center" style="background-image:url('{{ asset('/uploads/boxes/'.$box->file) }}')">
                     <h2 class="section-title"><a href="{{$box->link}}">{{$box->title}}</a></h2>
                     <p>{{$box->text}}</p>
@@ -82,11 +82,11 @@
                 <h2 class="section-title text-center">@lang('cms.nasiklienci-header')</h2>
             </div>
         </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-10">
+        <div class="row justify-content-center mt-1 mt-sm-5">
+            <div class="col-12 col-lg-10">
                 <div class="row d-flex justify-content-center">
                     @foreach($clients as $client)
-                        <div class="col-3">
+                        <div class="col-4 col-lg-3">
                             <div class="client">
                                 <div class="client-box">
                                     <img src="{{ asset('/uploads/clients/'.$client->file) }}" alt="{{ $client->name }} logo">
@@ -103,14 +103,14 @@
 <div id="mainPartnership">
     <div class="container">
         <div class="row inline inline-tc">
-            <div class="col-6 d-flex align-items-center">
+            <div class="col-12 col-lg-6 d-flex align-items-center">
                 <div class="section-text pe-5">
                     <span class="section-subtitle" data-modaleditor="2">{{ getInline($array, 2, 'modaleditor') }}</span>
                     <h2 class="section-title" data-modaltytul="2">{{ getInline($array, 2, 'modaltytul') }}</h2>
                     <div data-modaleditortext="2">{!! getInline($array, 2, 'modaleditortext') !!}</div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                 <div class="section-img section-img-shadow">
                     <img src="{{ getInline($array, 2, 'file') }}" alt="{{ getInline($array, 2, 'file_alt') }}" data-img="2">
                 </div>
@@ -125,14 +125,14 @@
 <div id="mainAwards">
     <div class="container">
         <div class="row flex-row-reverse inline inline-tc">
-            <div class="col-6 d-flex align-items-center">
+            <div class="col-12 col-lg-6 d-flex align-items-center">
                 <div class="section-text ps-5">
                     <span class="section-subtitle" data-modaleditor="3">{{ getInline($array, 3, 'modaleditor') }}</span>
                     <h2 class="section-title" data-modaltytul="3">{{ getInline($array, 3, 'modaltytul') }}</h2>
                     <div data-modaleditortext="3">{!! getInline($array, 3, 'modaleditortext') !!}</div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                 <div class="section-img section-img-shadow">
                     <img src="{{ getInline($array, 3, 'file') }}" alt="{{ getInline($array, 3, 'file_alt') }}" data-img="3">
                 </div>
@@ -174,7 +174,7 @@
 
 <div id="contactBoxes">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-6 col-md-4">
                 <div class="contact-box">
                     <div class="contact-box-circle"><i class="las la-envelope-open-text"></i></div>

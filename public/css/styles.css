@@ -1520,6 +1520,25 @@ html.swipebox-html.swipebox-touch {
   }
 }
 /* end of 1399.98px */
+@media (max-width: 1199.98px) {
+  #mainCategory .category-box {
+    padding: 40px;
+  }
+  #mainCategory .category-box .section-title {
+    font-size: 34px;
+  }
+  #mainCategory .category-box p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  #mainCategory h2 {
+    padding-bottom: 40px;
+  }
+  #mainCategory h2:before {
+    width: 260px;
+    bottom: 17px;
+  }
+}
 /* end of 1199.98 */
 @media (max-width: 991.98px) {
   #page-header {
@@ -1553,8 +1572,26 @@ html.swipebox-html.swipebox-touch {
   #contact iframe {
     height: 200px;
   }
+  #mainCategory:before {
+    display: none;
+  }
+  #mainCategory .col-12 {
+    border-top: 1px solid white;
+  }
 }
 /* end of 991.98 */
+@media (max-width: 767.98px) {
+  .client {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  #contactBoxes,
+  #mainAbout,
+  #mainPartnership,
+  #ourClients {
+    padding: 30px;
+  }
+}
 /* end of 767.98 */
 @media (max-width: 575.98px) {
   #page {
@@ -1597,12 +1634,19 @@ html.swipebox-html.swipebox-touch {
     margin-bottom: 0;
     margin-top: 40px;
   }
-  .page-contact #footer {
+  .page-contact #footer,
+  .homepage #footer {
     padding-top: 0;
   }
   #contact .contact-text {
     padding: 20px 20px 40px;
     text-align: center;
+  }
+  #contactBoxes,
+  #mainAbout,
+  #mainPartnership,
+  #ourClients {
+    padding: 30px 15px;
   }
 }
 /* end of 575.98 */
