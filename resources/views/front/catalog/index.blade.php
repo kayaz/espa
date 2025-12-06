@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row justify-content-center">
             @foreach($list as $offer)
-            <div class="col-4 col-xl-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="offer-box">
                     <a href="{{ route('offer.show', $offer->slug) }}">
                         <img src="{{ asset('/uploads/offer/'.$offer->file_thumb) }}" alt="{{$offer->title}}">
