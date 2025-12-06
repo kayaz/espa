@@ -1472,6 +1472,12 @@ html.swipebox-html.swipebox-touch {
 #triggermenu {
   display: none;
 }
+@media (max-width: 1609.98px) {
+  .offer-box h2 {
+    font-size: 20px;
+    margin: 18px 0 0;
+  }
+}
 @media (max-width: 1399.98px) {
   #mainCategory .category-box {
     padding: 70px;
@@ -1502,6 +1508,12 @@ html.swipebox-html.swipebox-touch {
   }
   #contactBoxes {
     padding: 70px 0;
+  }
+  .offer-box {
+    padding: 15px;
+  }
+  .offer-box h2 {
+    font-size: 17px;
   }
 }
 /* end of 1399.98px */
