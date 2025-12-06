@@ -1682,6 +1682,10 @@ html.swipebox-html.swipebox-touch {
   #mainCategory .category-box .section-title {
     font-size: 28px;
   }
+  #mainSlider {
+    height: 60vh;
+    min-height: 25rem;
+  }
   #mainSlider .apla h2 {
     font-size: 17px;
     line-height: 28px;
