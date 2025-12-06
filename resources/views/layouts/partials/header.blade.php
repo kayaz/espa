@@ -25,6 +25,7 @@
                                     </li>
                                 @endforeach
                             </ul>
+                            <div id="triggermenu"></div>
                         </nav>
                     </div>
                 </div>
