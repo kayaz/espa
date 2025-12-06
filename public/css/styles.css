@@ -1588,7 +1588,8 @@ html.swipebox-html.swipebox-touch {
   #contactBoxes,
   #mainAbout,
   #mainPartnership,
-  #ourClients {
+  #ourClients,
+  #mainAwards {
     padding: 30px;
   }
 }
@@ -1645,7 +1646,8 @@ html.swipebox-html.swipebox-touch {
   #contactBoxes,
   #mainAbout,
   #mainPartnership,
-  #ourClients {
+  #ourClients,
+  #mainAwards {
     padding: 30px 15px;
   }
 }
