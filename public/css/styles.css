@@ -1520,6 +1520,11 @@ html.swipebox-html.swipebox-touch {
 /* end of 1199.98 */
 /* end of 991.98 */
 /* end of 767.98 */
+@media (max-width: 575.98px) {
+  #page {
+    padding: 20px 15px;
+  }
+}
 /* end of 575.98 */
 /* end of 359.98 */
 .la,
