@@ -1578,6 +1578,15 @@ html.swipebox-html.swipebox-touch {
   #mainCategory .col-12 {
     border-top: 1px solid white;
   }
+  #mainSlider .apla {
+    left: 20px;
+    bottom: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  #mainSlider .apla h2 {
+    font-size: 31px;
+  }
 }
 /* end of 991.98 */
 @media (max-width: 767.98px) {
@@ -1659,6 +1668,16 @@ html.swipebox-html.swipebox-touch {
   }
   #mainCategory .category-box .section-title {
     font-size: 28px;
+  }
+  #mainSlider .apla h2 {
+    font-size: 17px;
+    line-height: 28px;
+  }
+  #mainSlider .apla {
+    left: 10px;
+    bottom: 10px;
+    padding: 10px 10px;
+    width: calc(100% - 20px);
   }
 }
 /* end of 575.98 */
