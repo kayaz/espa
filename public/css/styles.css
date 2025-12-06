@@ -1537,9 +1537,6 @@ html.swipebox-html.swipebox-touch {
     font-size: 15px;
     line-height: 25px;
   }
-}
-/* end of 575.98 */
-@media (max-width: 359.98px) {
   #page-header h1 {
     font-size: 35px;
   }
@@ -1551,6 +1548,7 @@ html.swipebox-html.swipebox-touch {
     margin-bottom: 5px;
   }
 }
+/* end of 575.98 */
 /* end of 359.98 */
 .la,
 .lab,
