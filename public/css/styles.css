@@ -1538,6 +1538,9 @@ html.swipebox-html.swipebox-touch {
     width: 260px;
     bottom: 17px;
   }
+  header nav li {
+    padding: 0 20px;
+  }
 }
 /* end of 1199.98 */
 @media (max-width: 991.98px) {
@@ -1586,6 +1589,16 @@ html.swipebox-html.swipebox-touch {
   }
   #mainSlider .apla h2 {
     font-size: 31px;
+  }
+  header nav ul {
+    display: none;
+  }
+  #logo {
+    padding: 15px;
+  }
+  #logo img {
+    filter: brightness(0%);
+    width: 95px;
   }
 }
 /* end of 991.98 */
