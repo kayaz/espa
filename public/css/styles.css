@@ -1518,14 +1518,39 @@ html.swipebox-html.swipebox-touch {
 }
 /* end of 1399.98px */
 /* end of 1199.98 */
+@media (max-width: 991.98px) {
+  #page-header {
+    padding: 200px 0 40px;
+  }
+}
 /* end of 991.98 */
 /* end of 767.98 */
 @media (max-width: 575.98px) {
   #page {
     padding: 20px 15px;
   }
+  .offer-box h2 {
+    font-size: 20px;
+  }
+  li,
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 /* end of 575.98 */
+@media (max-width: 359.98px) {
+  #page-header h1 {
+    font-size: 35px;
+  }
+  #page-header nav a,
+  #page-header nav li {
+    font-size: 11px;
+  }
+  #page-header ol {
+    margin-bottom: 5px;
+  }
+}
 /* end of 359.98 */
 .la,
 .lab,
