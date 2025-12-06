@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row inline inline-tc">
             <div class="col-12 col-lg-6 d-flex align-items-center">
-                <div class="section-text pe-5">
+                <div class="section-text pe-0 pe-lg-5">
                     <span class="section-subtitle" data-modaleditor="1">{{ getInline($array, 1, 'modaleditor') }}</span>
                     <h2 class="section-title" data-modaltytul="1">{{ getInline($array, 1, 'modaltytul') }}</h2>
                     <div data-modaleditortext="1">{!! getInline($array, 1, 'modaleditortext') !!}</div>
@@ -104,7 +104,7 @@
     <div class="container">
         <div class="row inline inline-tc">
             <div class="col-12 col-lg-6 d-flex align-items-center">
-                <div class="section-text pe-5">
+                <div class="section-text pe-0 pe-lg-5">
                     <span class="section-subtitle" data-modaleditor="2">{{ getInline($array, 2, 'modaleditor') }}</span>
                     <h2 class="section-title" data-modaltytul="2">{{ getInline($array, 2, 'modaltytul') }}</h2>
                     <div data-modaleditortext="2">{!! getInline($array, 2, 'modaleditortext') !!}</div>
@@ -126,7 +126,7 @@
     <div class="container">
         <div class="row flex-row-reverse inline inline-tc">
             <div class="col-12 col-lg-6 d-flex align-items-center">
-                <div class="section-text ps-5">
+                <div class="section-text ps-0 ps-lg-5">
                     <span class="section-subtitle" data-modaleditor="3">{{ getInline($array, 3, 'modaleditor') }}</span>
                     <h2 class="section-title" data-modaltytul="3">{{ getInline($array, 3, 'modaltytul') }}</h2>
                     <div data-modaleditortext="3">{!! getInline($array, 3, 'modaleditortext') !!}</div>
