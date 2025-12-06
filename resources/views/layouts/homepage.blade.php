@@ -19,7 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/styles.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/styles.min.css') }}?v=06122025" rel="stylesheet">
 
     @stack('style')
 </head>
@@ -215,7 +215,9 @@
                 </div>
             </div>
             <div class="col-3">
-                <img src="{{ asset('/images/contact.jpg') }}" alt="P.P.U. eSPa">
+                <div class="w-100 h-100 object-fit">
+                    <img src="{{ asset('/images/contact.jpg') }}" alt="P.P.U. eSPa">
+                </div>
             </div>
         </div>
     </div>

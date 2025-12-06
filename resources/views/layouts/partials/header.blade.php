@@ -3,14 +3,14 @@
         <div id="header">
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
-                    <div class="col-3">
+                    <div class="col-2">
                         <div id="logo">
                             <a href="/{{ $current_locale }}">
-                                <img src="{{asset('images/logo.svg') }}" alt="{{ settings()->get("page_title") }}">
+                                <img src="{{asset('images/logo.png') }}" alt="{{ settings()->get("page_title") }}">
                             </a>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-10">
                         <nav>
                             <ul id="mainmenu" class="mb-0 list-unstyled">
                                 <li><a href="{{ route('about.index') }}">@lang('cms.kimjestesmy-menu')</a></li>
